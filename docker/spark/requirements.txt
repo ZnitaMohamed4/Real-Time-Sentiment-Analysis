@@ -1,0 +1,16 @@
+
+flask
+pymongo
+flask-socketio
+eventlet
+
+kafka-python
+pyspark
+pandas
+matplotlib
+spacy
+scikit-learn
+
+download 
+
+python-dotenv
