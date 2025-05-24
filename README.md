@@ -186,5 +186,3 @@ MIT License. See `LICENSE`.
 
 * UCI Machine Learning Repository — Amazon Reviews Dataset
 * Apache Spark, Kafka, Flask, Docker communities
-
-```
