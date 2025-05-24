@@ -84,9 +84,11 @@ Wait until Spark and Kafka are fully up.
 
 ### 3. Run the Kafka Producer (sends reviews)
 
+#### ▶️ Linux / macOS:
+
 ```bash
 docker-compose up producer
-```
+````
 
 Or:
 
@@ -94,14 +96,30 @@ Or:
 docker exec -it kafka-producer python kafka_producer.py
 ```
 
+#### 🪟 Windows:
+
+```cmd
+run_producer.bat
+```
+
+---
+
 ### 4. Launch the Spark Consumer (model prediction)
 
+#### ▶️ Linux / macOS:
+
 ```bash
-docker exec -it spark-master /opt/bitnami/spark/bin/spark-submit \
-  --master spark://spark-master:7077 \
-  --deploy-mode client \
-  --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.1.3 \
+docker exec -it spark-master /opt/bitnami/spark/bin/spark-submit ^
+  --master spark://spark-master:7077 ^
+  --deploy-mode client ^
+  --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.1.3 ^
   /app/consumer/spark_consumer.py
+```
+
+#### 🪟 Windows:
+
+```cmd
+run_consumer.bat
 ```
 
 ### 5. Open Dashboard
