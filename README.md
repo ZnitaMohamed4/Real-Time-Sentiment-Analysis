@@ -165,7 +165,7 @@ MIT License. See `LICENSE`.
 
 ## 👨‍💻 Authors
 
-* 👤 Muhammed — [GitHub](https://github.com/your-username)
+* 👤 Muhammed — [GitHub](https://github.com/ZnitaMohamed4)
 
 ---
 
